@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">StudentManager</string>
+    <string name="home">Trang Chủ</string>
+    <string name="message">Tin Nhắn</string>
+    <string name="contact_book">Sổ Liên Lạc</string>
+    <string name="schedule">TKB</string>
+</resources>

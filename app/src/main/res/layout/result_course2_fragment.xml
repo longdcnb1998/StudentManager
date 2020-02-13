@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".view.fragment.ResultCourse2Fragment">
+
+        <TextView
+            android:id="@+id/textView_resultCourse"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Kết Quả Học Kì"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:weightSum="10"
+            android:background="@color/White"
+            android:id="@+id/linearLayout_tbMonCourse"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_resultCourse"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="TB Các Môn Học :"
+                android:textSize="22sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textView_tbMonCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="8.0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp" />
+        </LinearLayout>
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_tbMonCourse"
+            android:background="@color/colorDarkGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:weightSum="10"
+            android:background="@color/White"
+            android:id="@+id/linearLayout_HLCourse"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout_tbMonCourse"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:paddingLeft="16dp"
+                android:text="Học Lực :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="22sp" />
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/textView_HLCourse"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="22sp"
+                android:text="Giỏi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_HLCourse"
+            android:background="@color/colorDarkGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:weightSum="10"
+            android:background="@color/White"
+            android:id="@+id/linearLayout_HKCourse"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout_HLCourse"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Hạnh Kiểm :"
+                android:textSize="22sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/textView_HKCourse"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="22sp"
+                android:text="Tốt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_HKCourse"
+            android:background="@color/colorDarkGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:weightSum="10"
+            android:background="@color/White"
+            android:id="@+id/linearLayout_DHCourse"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout_HKCourse"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Danh Hiệu :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="22sp" />
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/textView_DHCourse"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="22sp"
+                android:text="Học Sinh Giỏi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/viewLast"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_DHCourse"
+            android:background="@color/colorDarkGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/textView_resultDetail"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="Kết Quả Chi Tiết"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_DHCourse" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="4dp"
+            android:id="@+id/recyclerView_resultDetail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_resultDetail" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
